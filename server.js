@@ -48,6 +48,11 @@ app.get("/news", async (req, res) => {
     res.json(results);
 });
 
+app.get("/", (req, res) => {
+    res.send("API Çalışıyor! 🚀");
+});
+
+
 // API'yi Başlat
 app.listen(PORT, () => {
     console.log(`🚀 Server ${PORT} portunda çalışıyor...`);
